@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://db312d0u7o3sy"]
+
+[ext_resource type="Texture2D" uid="uid://dkp7jvtwlvry" path="res://assest/Character/Peach/Stype_0/411.png" id="1_82ko8"]
+[ext_resource type="Texture2D" uid="uid://bx5o3epfb1as2" path="res://assest/Character/lock.png" id="2_sl0x7"]
+[ext_resource type="Texture2D" uid="uid://cpfdo4gc7rhe2" path="res://assest/Character/Peach/Stype_0/438.png" id="3_bkfn1"]
+[ext_resource type="Texture2D" uid="uid://bsyvchgtgv1hu" path="res://assest/Character/Peach/Stype_0/433.png" id="4_ls1ru"]
+[ext_resource type="Texture2D" uid="uid://c7sgj0ce12t75" path="res://assest/Character/Peach/Stype_0/419.png" id="5_yamex"]
+[ext_resource type="Texture2D" uid="uid://btqvaml31kcss" path="res://assest/Character/Peach/Stype_0/423.png" id="6_llcqp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="polygons" type="Node2D" parent="."]
+
+[node name="body" type="Polygon2D" parent="polygons"]
+texture = ExtResource("1_82ko8")
+polygon = PackedVector2Array(63.0436, -2.87152, 21.5037, -2.27996, -0.317702, 21.8693, 3.93295, 45.7602, 0.746793, 58.9938, 5.54805, 67.4231, 16.529, 76.7796, 45.9276, 106.15, 72.4136, 109.871, 111.887, 88.9389, 120.994, 50.5604, 105.726, 22.6152)
+uv = PackedVector2Array(59.079, -1.60886, 17.5443, -0.725149, -4.10672, 23.577, 0.311859, 47.4374, -2.78114, 60.6931, 2.07928, 69.0884, 13.1257, 78.3674, 42.7302, 107.53, 69.2417, 111.065, 108.567, 89.8557, 117.404, 51.4141, 101.939, 23.577)
+
+[node name="lock" type="Polygon2D" parent="polygons"]
+texture_filter = 1
+position = Vector2(38, 36)
+scale = Vector2(0.279608, 0.263945)
+texture = ExtResource("2_sl0x7")
+polygon = PackedVector2Array(109.067, 11.7562, 81.5485, 16.9701, 57.796, 34.35, 48.237, 53.7576, 47.6577, 74.3238, 52.582, 89.3864, 63.5893, 102.132, 46.2094, 170.492, 175.69, 170.492, 158.02, 101.842, 168.158, 91.9933, 174.241, 76.6411, 174.821, 57.2336, 167.869, 39.8537, 151.068, 23.6324, 127.605, 14.3632)
+uv = PackedVector2Array(109.067, 11.7562, 81.5485, 16.9701, 57.796, 34.35, 48.237, 53.7576, 47.6577, 74.3238, 52.582, 89.3864, 63.5893, 102.132, 46.2094, 170.492, 175.69, 170.492, 158.02, 101.842, 168.158, 91.9933, 174.241, 76.6411, 174.821, 57.2336, 167.869, 39.8537, 151.068, 23.6324, 127.605, 14.3632)
+
+[node name="rightHand" type="Polygon2D" parent="polygons"]
+position = Vector2(1, 71)
+texture = ExtResource("3_bkfn1")
+polygon = PackedVector2Array(16.0257, 0.502405, 9.32187, 6.06168, 9.32187, 6.22518, 1.30998, 19.7963, 0.492439, 27.1542, 3.10857, 37.6187, 17.3338, 44.3225, 25.0186, 44.3225, 33.8481, 21.4314, 33.0305, 6.87922, 22.893, -0.805659)
+uv = PackedVector2Array(16.0257, 0.502405, 9.32187, 6.06168, 9.32187, 6.22518, 1.30998, 19.7963, 0.492439, 27.1542, 3.10857, 37.6187, 17.3338, 44.3225, 25.0186, 44.3225, 33.8481, 21.4314, 33.0305, 6.87922, 22.893, -0.805659)
+
+[node name="leftHand" type="Polygon2D" parent="polygons"]
+position = Vector2(99, 70)
+texture = ExtResource("4_ls1ru")
+polygon = PackedVector2Array(11.879, -0.720184, 3.39149, 7.76735, 1.8681, 24.0895, -2.04922, 33.0123, 0.562317, 41.2822, 10.5733, 46.9406, 23.631, 42.1527, 30.3775, 24.0895, 23.631, -0.067297)
+uv = PackedVector2Array(11.879, -0.720184, 3.39149, 7.76735, 1.8681, 24.0895, -2.04922, 33.0123, 0.562317, 41.2822, 10.5733, 46.9406, 23.631, 42.1527, 30.3775, 24.0895, 23.631, -0.067297)
+
+[node name="rightfeet" type="Polygon2D" parent="polygons"]
+position = Vector2(11, 114)
+texture = ExtResource("5_yamex")
+polygon = PackedVector2Array(19.3422, -1.37501, 1.6727, 5.28727, -2.3826, 18.3222, -1.80327, 30.7777, 43.0947, 31.6467, 43.9637, 18.0325, 31.2185, -2.53367)
+uv = PackedVector2Array(19.3422, -1.37501, 1.6727, 5.28727, -2.3826, 18.3222, -1.80327, 30.7777, 43.0947, 31.6467, 43.9637, 18.0325, 31.2185, -2.53367)
+
+[node name="leftfeet" type="Polygon2D" parent="polygons"]
+position = Vector2(70, 116)
+texture = ExtResource("6_llcqp")
+polygon = PackedVector2Array(-3.3443, -3.55636, 56.5901, -3.20586, 56.2396, 31.1425, -5.09677, 33.2455)
+uv = PackedVector2Array(-3.3443, -3.55636, 56.5901, -3.20586, 56.2396, 31.1425, -5.09677, 33.2455)
+
+[node name="Skeleton" type="Skeleton2D" parent="."]
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton"]
