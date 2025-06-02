@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "新建游戏项目", "新建游戏项目.csproj", "{F8FF50E7-3512-403B-A402-CED54AAC04DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8FF50E7-3512-403B-A402-CED54AAC04DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8FF50E7-3512-403B-A402-CED54AAC04DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8FF50E7-3512-403B-A402-CED54AAC04DC}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{F8FF50E7-3512-403B-A402-CED54AAC04DC}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{F8FF50E7-3512-403B-A402-CED54AAC04DC}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{F8FF50E7-3512-403B-A402-CED54AAC04DC}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

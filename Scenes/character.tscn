@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=3 uid="uid://db312d0u7o3sy"]
+
+[ext_resource type="Script" uid="uid://docxxoq4rx1fi" path="res://Scenes/Character.cs" id="1_a5ess"]
+[ext_resource type="Texture2D" uid="uid://dtv3np6tc5sby" path="res://assest/Character/Peach/spirit/00.png" id="1_reotu"]
+[ext_resource type="Texture2D" uid="uid://1orwb0se8aqh" path="res://assest/Character/Peach/spirit/01.png" id="2_a5ess"]
+[ext_resource type="Texture2D" uid="uid://dphesr4w5dis6" path="res://assest/Character/Peach/spirit/02.png" id="3_wbia7"]
+[ext_resource type="Texture2D" uid="uid://qmqrinojf0b" path="res://assest/Character/Peach/spirit/03.png" id="4_kq7hj"]
+[ext_resource type="Texture2D" uid="uid://b8ovm4dw72vi4" path="res://assest/Character/Peach/spirit/04.png" id="5_7iw6i"]
+[ext_resource type="Texture2D" uid="uid://6trkafkxvfvs" path="res://assest/Character/Peach/spirit/05.png" id="6_l1rcp"]
+[ext_resource type="Texture2D" uid="uid://23f3jnw4vdqd" path="res://assest/Character/Peach/spirit/06.png" id="7_le1tg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dwptn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_reotu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_a5ess")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wbia7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kq7hj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7iw6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l1rcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_le1tg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a5ess"]
+radius = 91.0494
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_a5ess")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_dwptn")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.247344
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 14)
+shape = SubResource("CircleShape2D_a5ess")
